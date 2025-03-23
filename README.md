@@ -26,13 +26,13 @@ DocQuery uses Flagsmith to implement feature flags that control various aspects 
 
 ## Screenshot
 
-![alt text](<screenshots\Screenshot 2025-03-24 033545.png>)
-![alt text](<screenshots\Screenshot 2025-03-24 033558.png>)
-![alt text](<screenshots\Screenshot 2025-03-24 033616.png>)
-![alt text](<screenshots\Screenshot 2025-03-24 033829.png>)
-![alt text](<screenshots\Screenshot 2025-03-24 034018.png>)
-![alt text](<screenshots\Screenshot 2025-03-24 034041.png>)
-![alt text](<screenshots\Screenshot 2025-03-24 034105.png>)
+![alt text](screenshots/1.png)
+![alt text](screenshots/2.png)
+![alt text](screenshots/3.png)
+![alt text](screenshots/4.png)
+![alt text](screenshots/5.png)
+![alt text](screenshots/6.png)
+![alt text](screenshots/7.png)
 
 ## Setup
 
