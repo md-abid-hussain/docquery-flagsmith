@@ -8,34 +8,60 @@ DocQuery is a comprehensive project consisting of both frontend and backend comp
 
 [![Youtube Video](https://img.youtube.com/vi/nYDthsB8d7I/maxresdefault.jpg)](https://youtu.be/lcyrjW2Db7k)
 
+## Feature Flags
+
+![alt text](feature-table.png)
+
+DocQuery uses Flagsmith to implement feature flags that control various aspects of the application:
+
+| Flag Name              | Description                                                         |
+| ---------------------- | ------------------------------------------------------------------- |
+| `allow_anonymous`      | Controls whether users can use the application without signing in   |
+| `disable_ingestion`    | When enabled, prevents the ingestion of new repositories            |
+| `estimated_completion` | Shows the estimated time for maintenance completion                 |
+| `maintenance_message`  | Custom message displayed during maintenance periods                 |
+| `maintenance_mode`     | Controls whether maintenance mode is active or inactive             |
+| `maintenance_severity` | Defines the severity level of maintenance (info, warning, critical) |
+| `max_files_limit`      | Sets the maximum number of markdown files a user can ingest         |
+
+## Screenshot
+
+![alt text](<screenshots\Screenshot 2025-03-24 033545.png>)
+![alt text](<screenshots\Screenshot 2025-03-24 033558.png>)
+![alt text](<screenshots\Screenshot 2025-03-24 033616.png>)
+![alt text](<screenshots\Screenshot 2025-03-24 033829.png>)
+![alt text](<screenshots\Screenshot 2025-03-24 034018.png>)
+![alt text](<screenshots\Screenshot 2025-03-24 034041.png>)
+![alt text](<screenshots\Screenshot 2025-03-24 034105.png>)
+
 ## Setup
 
 ### Frontend
 
 1. Clone the repository:
 
-    ```sh
-    git clone https://github.com/md-abid-hussain/docquery.git
-    cd docquery-frontend
-    ```
+   ```sh
+   git clone https://github.com/md-abid-hussain/docquery.git
+   cd docquery-frontend
+   ```
 
 2. Install dependencies:
 
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
 3. Copy the example environment file and fill in the required values:
 
-    ```sh
-    cp .env.example .env
-    ```
+   ```sh
+   cp .env.example .env
+   ```
 
 4. Start the development server:
 
-    ```sh
-    npm run dev
-    ```
+   ```sh
+   npm run dev
+   ```
 
 5. The application will be available at `http://localhost:3000`.
 
@@ -43,35 +69,35 @@ DocQuery is a comprehensive project consisting of both frontend and backend comp
 
 1. Clone the repository:
 
-    ```sh
-    git clone <repository-url>
-    cd docquery-backend
-    ```
+   ```sh
+   git clone <repository-url>
+   cd docquery-backend
+   ```
 
 2. Create and activate a virtual environment:
 
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
 3. Install dependencies:
 
-    ```sh
-    pip install -r requirements.txt
-    ```
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 4. Copy the example environment file and fill in the required values:
 
-    ```sh
-    cp .env.example .env
-    ```
+   ```sh
+   cp .env.example .env
+   ```
 
 5. Start the FastAPI server:
 
-    ```sh
-    uvicorn app.main:app --reload
-    ```
+   ```sh
+   uvicorn app.main:app --reload
+   ```
 
 6. The application will be available at `http://127.0.0.1:8000`.
 
@@ -105,22 +131,6 @@ The QA Agent is defined in agent.py. It consists of the following nodes:
 
 - `GET /`: Returns a simple greeting message.
 - `POST /copilotkit`: Endpoint for interacting with the agents.
-
-## Feature Flags
-
-![alt text](feature-table.png)
-
-DocQuery uses Flagsmith to implement feature flags that control various aspects of the application:
-
-| Flag Name | Description |
-|-----------|-------------|
-| `allow_anonymous` | Controls whether users can use the application without signing in |
-| `disable_ingestion` | When enabled, prevents the ingestion of new repositories |
-| `estimated_completion` | Shows the estimated time for maintenance completion |
-| `maintenance_message` | Custom message displayed during maintenance periods |
-| `maintenance_mode` | Controls whether maintenance mode is active or inactive |
-| `maintenance_severity` | Defines the severity level of maintenance (info, warning, critical) |
-| `max_files_limit` | Sets the maximum number of markdown files a user can ingest |
 
 ## Environment Variables
 
