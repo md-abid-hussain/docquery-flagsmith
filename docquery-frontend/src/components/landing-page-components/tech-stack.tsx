@@ -12,6 +12,7 @@ const techStack = [
   { name: "MongoDB", logo: "/mongodb-logo.jpg" },
   { name: "Together AI", logo: "/togetherai-logo.jpg" },
   { name: "Google Gemini", logo: "/gemini-logo.png" },
+  { name: "Flagsmith", logo: "/flagsmith.png" },
 ];
 
 const container = {

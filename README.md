@@ -4,9 +4,9 @@
 
 DocQuery is a comprehensive project consisting of both frontend and backend components. The frontend is built with Next.js and Tailwind CSS, providing a user-friendly interface to create powerful knowledge bases for LLMs using markdown documentation. The backend leverages FastAPI to provide endpoints for different agents built using the `langgraph` library and integrated into the FastAPI application using `CopilotKitSDK`. The application uses `Flagsmith` for feature flag management to control application behavior and enable/disable features dynamically.
 
-<!-- ## Video: Click to view
+## Video: Click to view
 
-[![Youtube Video](https://img.youtube.com/vi/nYDthsB8d7I/maxresdefault.jpg)](https://youtu.be/nYDthsB8d7I?si=uOEHGZB2A7DRpMsn) -->
+[![Youtube Video](https://img.youtube.com/vi/nYDthsB8d7I/maxresdefault.jpg)](https://youtu.be/lcyrjW2Db7k)
 
 ## Setup
 
@@ -107,6 +107,8 @@ The QA Agent is defined in agent.py. It consists of the following nodes:
 - `POST /copilotkit`: Endpoint for interacting with the agents.
 
 ## Feature Flags
+
+![alt text](feature-table.png)
 
 DocQuery uses Flagsmith to implement feature flags that control various aspects of the application:
 
